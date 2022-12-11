@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal-Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/248a55d9e4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/logon.png" class="logo" alt="logo_here">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contacts</a></li>
+                    <i class="fa-solid fa-xmark mark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars mark" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Full Stack Developer</p>
+                <h1>Hi, I'm <span>Asish</span><br>From India</h1>
+            </div>
+        </div>
+    </div>
+    <!----------About Section------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/newk.jpg" class="about-img" alt="user">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="desciption">"Took me a while to finish this project, but it was definitely worth it. I enjoyed every step of the process and learned a few tricks along the way. Sure, there were some frustrating moments (i.e., debugging the cause of the y-axis overflow from the enormous CSS and JavaScript code I built), but everything was worth it. I was able to pick more tools, such as getting a Chrome extension to identify the z-index relationship between elements and getting my hands on Figma, which is a pretty dope wireframing/prototyping software."</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('internships')">Internships</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Front-End Design</span><br>Design Static ,Dynamic and Interactive Websites</li>
+                            <li><span>Tools</span><br>HTML5, CSS3, JavaScript and ReactJs</li> 
+                            <li><span>Back-End Design</span><br>Design the logic for frontend Applications</li> 
+                            <li><span>Tools</span><br>NodeJs, ExpressJs ,SQL, Python</li>                        
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="internships">
+                        <ul>
+                            <li><span>Web Development (2020- 2021)</span><br>Intrenshala.</li>
+                            <li><span>Mern Stack Developer (2022-Current)</span><br>NxtWave Disruptive Technology Pvt.Ltd.</li> 
+                                                   
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---Projects Section------------->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="projects-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2 class="zone1">Food-Munch-Website</h2>
+                    <p class="zone2">This is responsive websites for food order  various section design  food section to payment gateway do some order here.</p>
+                    <a href="https://foodcrunch.ccbp.tech/"><i class="fa-brands fa-github"></i> Click here</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2 class="zone1">Speedo meter</h2>
+                    <p class="zone2">Here when you click on acclerate button speed will increase and apply brakes reduce the spped reach the maximum limit refresh again.</p>
+                    <a href="https://github.com/asish0sahu/speedometer.git"><i class="fa-brands fa-github"></i> Click here</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2 class="zone1">App Store</h2>
+                    <p class="zone2">Here you can search Any Applications by your category and it will show the result.</p>
+                    <a href="https://github.com/asish0sahu/appstores.git"><i class="fa-brands fa-github"></i> Click here</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!---Protfolio section-->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="https://res.cloudinary.com/dqan2oply/image/upload/v1670667568/images_6_gvl42t.jpg"/>
+                    <div class="layer">
+                        <h3>Food-Munch</h3>
+                        <p>Healthy food makes you feel good.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="https://res.cloudinary.com/dqan2oply/image/upload/v1670666829/images_4_kydwyv.png"/>
+                    <div class="layer">
+                        <h3>Speed Track</h3>
+                        <p>Get ready for rush hour.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="https://res.cloudinary.com/dqan2oply/image/upload/v1670668841/images_7_ba8crz.jpg"/>
+                    <div class="layer">
+                        <h3>App-Store</h3>
+                        <p>Your App Your Choice</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <a href="https://www.w3schools.com/whatis/" class="btn">See More</a>
+            
+        </div>
+    </div>
+
+    <!---Contact Section---->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>asish0sahu84@gmail.com</p>
+                    <p><i class="fa-solid fa-mobile-retro"></i>+91-9348696095</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/AsishKu25514721"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/asish-kumar-sahu-54358a126/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/asish0sahu"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="Images/asishcv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email id" required>
+                        <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-regular fa-copyright"></i> Asish 2022 Made with <i class="fa-solid fa-heart"></i> by SahuJi</p>
+        </div>
+
+    </div>
+
+    <script>
+
+        var tablinks =document.getElementsByClassName("tab-links");
+        var tabcontents =document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for (tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemeu=document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemeu.style.right="0";
+        }
+        function closemenu(){
+            sidemeu.style.right="-200px";
+        }
+
+        
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx0o7I27f5MlE9oqAQ2n998ltz_2f4dIzJR16LOXUhLu3bxNq_pHCzN1tqZFwzZgX8R/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg =document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message Sent Sucessfully"
+        })
+        
+        setTimeout(function(){
+            msg.innerHTML=""
+        },5000)
+        form.reset()
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
